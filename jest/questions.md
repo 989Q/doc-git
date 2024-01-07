@@ -12,7 +12,7 @@ npm install --save-dev @types/jest
 ```
 
 2. Add the following import statement at the beginning of your test file:
-```bash
+```ts
 import '@types/jest';
 ```
 This ensures that TypeScript recognizes the Jest types.
@@ -49,7 +49,7 @@ import * as request from 'supertest';
 
 ### Solution
 
-The docs show `import * as request from 'supertest'` for a reason. Supertest does not use a default export. Unless you add `esModuleInterop:` true to your `tsconfig` you'll need to use the commonjs import syntax for Typescript. If you need further support, please visit our [Discord](https://discord.com/invite/nestjs)
+The docs show `import * as request from 'supertest'` for a reason. Supertest does not use a default export. Unless you add `esModuleInterop: true` to your `tsconfig` you'll need to use the commonjs import syntax for Typescript. If you need further support, please visit our [Discord](https://discord.com/invite/nestjs)
 
 
 ## Issue: "express.default is not a function" in a Container
@@ -82,3 +82,10 @@ TypeError: express.default is not a function
 ### Solution
 
 Turn on "esModuleInterop": true, from your tsconfig.json file
+```json
+{
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
+}
+```
