@@ -1,38 +1,3 @@
-## Deleting Commits in Git
-
-### Way 1: Removing the Last Commit
-
-If you want to delete the last commit from the branch, follow these steps:
-
-```bash
-# Step 1: Roll back the last commit
-git reset --hard HEAD~1
-
-# Step 2: Force push the changes to the remote repository
-git push origin HEAD --force
-```
-
-For more details, check [Stack Overflow](https://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git)
-
-### Way 2: Deleting a Specific Commit
-
-If you need to delete a specific commit identified by its commit ID (SHA-1 hash), use the following steps:
-
-```bash
-# Step 1: Roll back to the commit before the target commit
-git reset --hard HEAD~1
-
-# Step 2: Roll back to the specific commit ID
-git reset --hard <sha1-commit-id>
-
-# Step 3: Force push the changes to the remote repository
-git push origin HEAD --force
-```
-
-For more details, check [Stack Overflow](https://stackoverflow.com/questions/1338728/how-do-i-delete-a-commit-from-a-branch)
-
-
-
 ## Github Token 
 
 ### Problem: Support for Password Authentication Removed
