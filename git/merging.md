@@ -1,3 +1,6 @@
+
+
+
 ## Merging Changes from One Branch to Another
 
 To seamlessly integrate changes from one branch into another in your Git repository, follow these steps:
@@ -16,6 +19,14 @@ Once you're on the target branch (`dev-2`), merge the changes from the source br
 
 ```bash
 git merge dev-1
+```
+
+## How to Unmerge a Git Merge?
+
+In case you need to undo a merge, follow the steps outlined in [this Stack Overflow thread](https://stackoverflow.com/questions/28932515/how-to-unmerge-a-git-merge)
+
+```bash
+git reset --merge HEAD~1
 ```
 
 ### Note:
