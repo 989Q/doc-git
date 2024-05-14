@@ -1,6 +1,3 @@
-
-
-
 ## Merging Changes from One Branch to Another
 
 To seamlessly integrate changes from one branch into another in your Git repository, follow these steps:
