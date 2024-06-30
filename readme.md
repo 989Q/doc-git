@@ -31,3 +31,12 @@ Learn about GraphQL, a query language for your API, and dive into its implementa
 ### System
 
 Explore system administration guides, shell scripting tips, and troubleshooting techniques to manage and maintain your system effectively.
+
+### Terminal
+
+Unleash the power of the command line with our terminal resources. This section includes:
+
+- **Basic Commands**: Essential commands every developer should know.
+- **Advanced Scripting**: Techniques for writing complex shell scripts.
+- **Customization**: Tips for personalizing your terminal environment.
+- **Productivity Tools**: Command-line tools and utilities to enhance your workflow.
